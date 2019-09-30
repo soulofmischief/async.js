@@ -1,0 +1,12 @@
+[libs]
+flow-typed
+
+[options]
+;; Enforce strict mode for all modules
+module.use_strict=true
+
+[strict]
+nonstrict-import
+unclear-type
+untyped-import
+untyped-type-import

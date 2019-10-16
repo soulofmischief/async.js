@@ -43,8 +43,8 @@ rules:
 
   max-len:
   - 1
-  - code: 79
-    comments: 79
+  - code: 80
+    comments: 80
     ignoreUrls: true
 
   max-statements:

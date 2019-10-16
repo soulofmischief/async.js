@@ -3,7 +3,12 @@ import { isPlainObject } from 'lodash'
 import { zip } from '@soulofmischief/js-utils'
 
 
-export async function resolveProps( o ) {
+/**
+ * Recursively resolve each property to its value.
+ * Replaces promises with their returned value and doesn't resolve until
+ * all properties are finished resolving.
+ */
+export async function resolveProps( o: Object ): Promise<*> {
   return zip(
     Object.keys( o ),
     await Promise.all(

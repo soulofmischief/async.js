@@ -1,7 +1,9 @@
 // @flow strict
 import { isObject, isPromise, zip } from '@soulofmischief/js-utils'
 
-
+/**
+ * Recursively wrap each property in a promise.
+ */
 export function promisifyProps( o ) {
   return zip(
     Object.keys( o ),

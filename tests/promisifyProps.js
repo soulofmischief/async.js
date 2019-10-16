@@ -12,6 +12,6 @@ const t = {
 
 
 o( 'promisifyProps', async function () {
-  o( await resolveProps( promisifyProps( await resolveProps( t ))))
-    .deepEquals( await resolveProps( t ))
+  o( promisifyProps( await resolveProps( t )))
+    .deepEquals( t )
 })

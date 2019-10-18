@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.6.3",
-    "@soulofmischief/array.js": "^0.5.0",
-    "@soulofmischief/js-utils": "^0.5.1",
+    "@soulofmischief/array.js": "^0.5.1",
+    "@soulofmischief/js-utils": "^0.5.3",
     "lodash": "^4.17.15"
   },
   "devDependencies": {

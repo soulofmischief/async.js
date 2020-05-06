@@ -8,6 +8,7 @@
   "engines": {
     "node": ">=8.5.0"
   },
+  "main": "index",
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run clean --scripts-prepend-node-path; for script in {flow,lib}; do npm run build:$script --scripts-prepend-node-path; done",
@@ -17,7 +18,9 @@
     "clean": "rimraf lib",
     "lint:flow": "npx flow status",
     "lint:flow:stop": "npx flow stop",
-    "prepublishOnly": "npm run build --scripts-prepend-node-path",
+    "publish:patch": "npm run build && npm version patch && cp -f package.json lib && npm publish --access public lib",
+    "publish:minor": "npm run build && npm version minor && cp -f package.json lib && npm publish --access public lib",
+    "publish:major": "npm run build && npm version major && cp -f package.json lib && npm publish --access public lib",
     "test": "babel-node node_modules/.bin/ospec"
   },
   "dependencies": {

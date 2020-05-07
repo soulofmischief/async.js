@@ -5,7 +5,8 @@ import { makePromise } from './makePromise'
 export async function loop(
   cb: () => *,
   condition?: () => boolean = () => true,
-  after?: () => * ) {
+  after?: () => *
+) {
   const { promise, resolve } = makePromise()
 
   let

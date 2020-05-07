@@ -777,7 +777,7 @@
     pirates "^4.0.0"
     source-map-support "^0.5.16"
 
-"@babel/runtime@^7.6.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.6":
+"@babel/runtime@^7.8.4", "@babel/runtime@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
   integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
@@ -837,7 +837,7 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@soulofmischief/array.js@^0.11.7", "@soulofmischief/array.js@^0.11.8":
+"@soulofmischief/array.js@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@soulofmischief/array.js/-/array.js-0.11.8.tgz#cb8697f5a613025f9891501f706572fa6744af4e"
   integrity sha512-kWKDkxYiJJTiZpLdjn3w6Crl9/8GJTLpGH6XvW91vhIb+QSIuSzu5coQqfi/2Cy03z6dY4HRxwDhRzjdrcaNqw==
@@ -845,39 +845,32 @@
     "@babel/runtime" "^7.9.6"
     "@soulofmischief/js-utils" "^0.8.1"
 
-"@soulofmischief/array.js@^0.5.0", "@soulofmischief/array.js@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@soulofmischief/array.js/-/array.js-0.5.1.tgz#8e9f5c707cc43984448c740e288a9a50686ed0af"
-  integrity sha512-pLHdXoocoEBl1wwfFziiLT0U0iPqKG17qiVWb25LoUPbal3M8lfIRsJw0EMkllXcpTMnsT1vZBCxJXeL4OXh9A==
+"@soulofmischief/async.js@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@soulofmischief/async.js/-/async.js-1.2.0.tgz#9a2d5122b1c09b82cb7ddb1d14688449273f7589"
+  integrity sha512-la1+KqeHUuP4i93om2LbolsrEBEFjxrTSm69475RxKmzGk4sn0bLDrZRh7j+nYZAW1Z2qaT68YzNweeHSErQaA==
   dependencies:
-    "@babel/runtime" "^7.6.3"
-    "@soulofmischief/js-utils" "^0.5.3"
-
-"@soulofmischief/async.js@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@soulofmischief/async.js/-/async.js-1.1.2.tgz#04fceae4bbdc23aee2583108ccd940e67f9103e3"
-  integrity sha512-Wpm2SXiLKoy2VoqFnWhSVUAFKV5Sx8j3wytd/mbBsNZZ2dXIQT0iGbzjK907qE78xofKU4BRsT87s56mMOLsuA==
-  dependencies:
-    "@babel/runtime" "^7.6.3"
-    "@soulofmischief/array.js" "^0.5.1"
-    "@soulofmischief/js-utils" "^0.5.3"
+    "@babel/runtime" "^7.9.6"
+    "@soulofmischief/array.js" "^0.11.8"
+    "@soulofmischief/js-utils" "^0.8.1"
     lodash "^4.17.15"
 
-"@soulofmischief/js-utils@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@soulofmischief/js-utils/-/js-utils-0.5.3.tgz#6fb9b7e39f49e9a9f3238858703585fdfca985fd"
-  integrity sha512-CC/L+9bq7mUWM4tYT48m7aP7RYWcCgH3MRAskbYPqYta51IyX8yJ2pO7+32ErQZhgwquN4bZq3NHK70hYvvwGA==
+"@soulofmischief/js-utils@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@soulofmischief/js-utils/-/js-utils-0.10.0.tgz#9b2f3ebbceeb1890a5983dfd08f88cad4ce1dca8"
+  integrity sha512-qQK3C/hJflmAN+KsSGEI5WcgMptMX6LDO7IrL1i7vtbS5MfDiDXSJ1Pq0x1PZpfJS2PcK1QmgZegwkXVoMBA3A==
   dependencies:
-    "@soulofmischief/array.js" "^0.5.0"
+    "@soulofmischief/array.js" "^0.11.8"
+    "@soulofmischief/async.js" "^1.2.0"
     lodash "^4.17.15"
 
 "@soulofmischief/js-utils@^0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@soulofmischief/js-utils/-/js-utils-0.8.1.tgz#b5f2dcdf240409dd50e4fa68225b0b7d505c9736"
-  integrity sha512-K+EEuCSGfVOOIBu/l5wIRA8y4fQEWE17ugAPzkopt6XxjVeotYi+rLweB/xyjMoCIlwAxCpyQlA+C5ux+gJ2yw==
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@soulofmischief/js-utils/-/js-utils-0.8.2.tgz#c66170fd20e4202e7f507f1e4dec949dd95ecab4"
+  integrity sha512-79MWw89oi6xn+gdMeW3jpWbDBeHkLfgvIGvPpPTd3OqOgyPE1HxAPfmZG7mWAss4wPUKVBN32AxhD/o1nMcEzA==
   dependencies:
-    "@soulofmischief/array.js" "^0.11.7"
-    "@soulofmischief/async.js" "^1.1.2"
+    "@soulofmischief/array.js" "^0.11.8"
+    "@soulofmischief/async.js" "^1.2.0"
     lodash "^4.17.15"
 
 "@types/color-name@^1.1.1":

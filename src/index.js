@@ -2,7 +2,7 @@
 
 
 export { createAsyncResolver } from './createAsyncResolver'
-export { getState } from './getState'
+export { getPromiseState } from './getPromiseState'
 export { loop } from './loop'
 export { makePromise } from './makePromise'
 export { poll } from './poll'

@@ -2,9 +2,9 @@ import o from 'ospec'
 import { promisifyProps, resolveProps } from '../src'
 
 
-const
-  t = { a: 1, b: { a: 2, b: 3 }}
+const obj = { a: 1, b: { c: 2, d: { e: 3, f: 4, }, }, g: [ 4, 5, ]}
 
-o( 'resolveProps', async function () {
-  o( await resolveProps( await promisifyProps( t ))).deepEquals( t )
+
+o( 'resolveProps', async () => {
+  o( await resolveProps( await promisifyProps( obj ))).deepEquals( obj )
 })

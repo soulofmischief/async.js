@@ -3,8 +3,6 @@ import { timeout } from './timeout'
 
 
 export async function poll( cb, t = 100 ) {
-export async function poll( cb, t ) {
   await timeout( t )
-  if ( cb()) return true
-  else return await poll( cb, t )
+  return cb() || await poll( cb, t )
 }

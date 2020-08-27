@@ -2,6 +2,7 @@
 import { timeout } from './timeout'
 
 
+export async function poll( cb, t = 100 ) {
 export async function poll( cb, t ) {
   await timeout( t )
   if ( cb()) return true

@@ -901,6 +901,16 @@
     "@soulofmischief/js-utils" "^0.11.2"
     lodash "^4.17.15"
 
+"@soulofmischief/async.js@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@soulofmischief/async.js/-/async.js-1.4.0.tgz#2f7e855c00ff4cfc8c9f0e68b3ee53eae349c8fb"
+  integrity sha512-Ken/1wKhUZV6oUDMGdSOBqgxFmnebt8rtiRUwdukL9xxbyR9KrNNhlRA1SwJ+MYy7P0VDCaXZAkaHolRHl6CQg==
+  dependencies:
+    "@babel/runtime" "^7.9.6"
+    "@soulofmischief/array.js" "^0.13.0"
+    "@soulofmischief/js-utils" "^0.13.0"
+    lodash "^4.17.15"
+
 "@soulofmischief/js-utils@^0.10.0":
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/@soulofmischief/js-utils/-/js-utils-0.10.0.tgz#9b2f3ebbceeb1890a5983dfd08f88cad4ce1dca8"
@@ -935,6 +945,15 @@
   dependencies:
     "@soulofmischief/array.js" "^0.13.0"
     "@soulofmischief/async.js" "^1.3.2"
+    lodash "^4.17.15"
+
+"@soulofmischief/js-utils@^0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@soulofmischief/js-utils/-/js-utils-0.13.1.tgz#bdcc8cfabb1b976bf807ff6b538fa0011b14dc5e"
+  integrity sha512-f5vUI8PqorvttgP5gCnqI9HBeMxmRYBCO3iIT1In1TY1U4b+cOfFJ7ii+vhnvrcyHWszNw8dHKZn31Oy59pVmg==
+  dependencies:
+    "@soulofmischief/array.js" "^0.13.0"
+    "@soulofmischief/async.js" "^1.4.0"
     lodash "^4.17.15"
 
 "@soulofmischief/js-utils@^0.8.1":

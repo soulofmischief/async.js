@@ -1,5 +1,6 @@
 // @flow strict
-import { changeValues, isObject } from '@soulofmischief/js-utils'
+import { changeValues } from '@soulofmischief/js-utils/changeValues'
+import { isObject } from '@soulofmischief/js-utils/isObject'
 import { isPromise } from './isPromise'
 
 

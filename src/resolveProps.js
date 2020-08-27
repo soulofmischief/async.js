@@ -1,5 +1,5 @@
 // @flow strict
-import { changeValuesAsync } from '@soulofmischief/js-utils'
+import { changeValuesAsync } from '@soulofmischief/js-utils/changeValuesAsync'
 import { isPlainObject } from 'lodash'
 
 

@@ -2,6 +2,7 @@
 
 
 export { createAsyncResolver } from './createAsyncResolver'
+export { execAsync } from './execAsync'
 export { getPromiseState } from './getPromiseState'
 export { loop } from './loop'
 export { isPromise } from './isPromise'

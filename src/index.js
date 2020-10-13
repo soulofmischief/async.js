@@ -1,6 +1,5 @@
 // @flow strict
 
-
 export { createAsyncResolver } from './createAsyncResolver'
 export { execAsync } from './execAsync'
 export { getPromiseState } from './getPromiseState'

@@ -2,10 +2,14 @@
 
 
 export function makePromise() {
-  let resolve
+  let reject, resolve
+
   //eslint-disable-next-line promise/param-names
-  const promise = new Promise( r => resolve = r )
+  const promise = new Promise(( res, rej ) => {
+    reject = rej
+    resolve = res
+  })
 
   //noinspection JSUnusedAssignment
-  return { promise, resolve }
+  return { promise, reject, resolve }
 }

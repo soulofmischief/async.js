@@ -17,9 +17,11 @@
     "clean": "rimraf lib",
     "lint:flow": "npx flow status",
     "lint:flow:stop": "npx flow stop",
-    "publish:patch": "npm test && npm run build && npm version patch && cp -f package.json lib && cd lib && npm publish --access public",
-    "publish:minor": "npm run build && npm version minor && cp -f package.json lib && npm publish --access public lib",
-    "publish:major": "npm run build && npm version major && cp -f package.json lib && npm publish --access public lib",
+    "publish:patch": "npm run publish:pre && npm version patch && npm run publish:post",
+    "publish:minor": "npm run publish:pre && npm version minor && npm run publish:post",
+    "publish:major": "npm run publish:pre && npm version major && npm run publish:post",
+    "publish:pre": "npm test && npm run build",
+    "publish:post": "cp -f package.json lib && cd lib && npm publish --access public",
     "test": "babel-node node_modules/.bin/ospec"
   },
   "dependencies": {

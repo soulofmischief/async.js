@@ -3,7 +3,7 @@ import { makePromise } from './makePromise'
 
 
 export async function loop(
-  condition?: () => boolean = () => true,
+  condition?: () => boolean,
   cb: () => *,
   after?: () => *
 ) {

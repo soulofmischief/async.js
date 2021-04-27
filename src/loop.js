@@ -14,14 +14,14 @@ export async function loop(
     prevTime = null
 
   // Construct loop.
-  const _loop = time => {
+  const _loop = async time => {
     if ( condition()) {
       delta = time - ( prevTime ?? time )
-      cb( time, delta )
+      await cb( time, delta )
       prevTime = time
       requestAnimationFrame( _loop )
     } else {
-      if ( after ) after()
+      if ( after ) after( time )
       resolve()
     }
   }

@@ -2,13 +2,13 @@
   "name": "@soulofmischief/async.js",
   "version": "5.0.0",
   "description": "An advanced Javascript async library.",
-  "author": "soulofmischief <soulofmischief@protonmail.com>",
+  "author": "soulofmischief",
   "repository": "https://github.com/soulofmischief/async.js",
   "license": "MIT",
   "engines": {
     "node": ">=8.5.0"
   },
-  "main": "index",
+  "main": "index.js",
   "scripts": {
     "build": "npm run clean --scripts-prepend-node-path; for script in {flow,lib}; do npm run build:$script --scripts-prepend-node-path; done",
     "build:dev": "NODE_ENV=development nodemon -w src --exec 'npm run build'",

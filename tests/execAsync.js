@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { execAsync, timeout } from '../src'
+import { execAsync, timeout } from '../index.js'
 
 
 o.spec( 'execAsync', () => {

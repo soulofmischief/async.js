@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { getPromiseState } from '../src'
+import { getPromiseState } from '../index.js'
 
 
 const

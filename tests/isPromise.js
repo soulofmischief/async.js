@@ -1,11 +1,10 @@
 import o from 'ospec'
-import { isPromise } from '../src'
+import { isPromise } from '../index.js'
 
 
 const
   x = 1,
   y = Promise.resolve( x )
-
 
 
 o.spec( 'isPromise', () => {

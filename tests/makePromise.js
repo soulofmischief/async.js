@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { makePromise } from '../src'
+import { makePromise } from '../index.js'
 
 
 o.spec( 'makePromise', () => {

@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { promisifyProps, resolveProps } from '../src'
+import { promisifyProps, resolveProps } from '../index.js'
 
 
 const

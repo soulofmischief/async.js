@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { timeoutReject } from '../src'
+import { timeoutReject } from '../index.js'
 
 const time = 10
 

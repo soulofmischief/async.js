@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { timeout } from '../src'
+import { timeout } from '../index.js'
 
 const time = 10
 
